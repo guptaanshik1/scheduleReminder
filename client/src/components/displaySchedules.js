@@ -69,7 +69,7 @@ const DisplaySchedules = ({
 
   useEffect(() => {
     callGetSchedules();
-  }, [shouldReload]);
+  }, [shouldReload === true]);
 
   const handleImportant = async (scheduleId) => {
     // console.log(schedule)
